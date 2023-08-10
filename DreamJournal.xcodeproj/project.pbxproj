@@ -143,10 +143,10 @@
 				DA25A2C22A3652C6006883D6 /* SignUpViewController.swift */,
 				DA25A2C62A36967F006883D6 /* ProfileViewController.swift */,
 				DA25A2C82A37D46A006883D6 /* AddJournalEntryViewController.swift */,
+				DA3101302A7BDE3600A0CEE4 /* DashboardViewController.swift */,
 				DA78409C2A5789A30091AF96 /* DataSeeder.swift */,
 				DA78409F2A5792550091AF96 /* dreams.json */,
 				DA78409E2A5792550091AF96 /* users.json */,
-				DA3101302A7BDE3600A0CEE4 /* DashboardViewController.swift */,
 			);
 			path = DreamJournal;
 			sourceTree = "<group>";

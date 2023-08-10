@@ -99,7 +99,7 @@
                                 <rect key="frame" x="215" y="368" width="180" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-CT-eH6">
-                                        <rect key="frame" x="31" y="6.3333333333333162" width="118" height="21.666666666666671"/>
+                                        <rect key="frame" x="20.666666666666657" y="7" width="138.66666666666666" height="20"/>
                                         <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="17"/>
                                         <color key="textColor" red="0.14509803921568626" green="0.14117647058823529" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                 <rect key="frame" x="40" y="426" width="350" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yx-Fi-1Zc">
-                                        <rect key="frame" x="152" y="15.333333333333313" width="46.333333333333343" height="29.333333333333329"/>
+                                        <rect key="frame" x="146.33333333333334" y="16.666666666666686" width="57.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="23"/>
                                         <color key="textColor" red="0.14509803921568626" green="0.14117647058823529" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -156,13 +156,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--------Or sign up with--------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3w-kg-h1s">
-                                <rect key="frame" x="127.66666666666669" y="529" width="175" height="21.666666666666629"/>
+                                <rect key="frame" x="104.33333333333333" y="529" width="221.33333333333337" height="20"/>
                                 <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="17"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.14117647058823529" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHc-eA-eYy">
-                                <rect key="frame" x="60" y="593.66666666666663" width="90" height="60"/>
+                                <rect key="frame" x="60" y="592" width="90" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tmp-ZK-TQP">
                                         <rect key="frame" x="25" y="10" width="40" height="40"/>
@@ -190,7 +190,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47o-I6-Y4n">
-                                <rect key="frame" x="170" y="593.66666666666663" width="90" height="60"/>
+                                <rect key="frame" x="170" y="592" width="90" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbicon" translatesAutoresizingMaskIntoConstraints="NO" id="kni-S1-8H1">
                                         <rect key="frame" x="25" y="10" width="40" height="40"/>
@@ -218,7 +218,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhm-VJ-FFw">
-                                <rect key="frame" x="280" y="593.66666666666663" width="90" height="60"/>
+                                <rect key="frame" x="280" y="592" width="90" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleicon" translatesAutoresizingMaskIntoConstraints="NO" id="uhJ-t7-uUh">
                                         <rect key="frame" x="25" y="10" width="40" height="40"/>
@@ -246,10 +246,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-fB-3U8">
-                                <rect key="frame" x="0.0" y="673.66666666666663" width="430" height="50"/>
+                                <rect key="frame" x="0.0" y="672" width="430" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not registered yet ? Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp1-0X-sFP">
-                                        <rect key="frame" x="85.666666666666686" y="12.999999999999998" width="259" height="24.333333333333329"/>
+                                        <rect key="frame" x="62.666666666666657" y="13.999999999999998" width="305" height="22.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="19"/>
                                         <color key="textColor" red="0.14509803921568626" green="0.14117647058823529" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -325,24 +325,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Dream_journal_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nas-p6-fne">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dream_journal_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nas-p6-fne">
                                 <rect key="frame" x="65" y="49" width="300" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="6fB-pe-mes"/>
-                                    <constraint firstAttribute="height" constant="130" id="Jq1-gv-ats"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-pW-J5z" userLabel="Email">
                                 <rect key="frame" x="34" y="190" width="345" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1n-0B-iGI">
                                 <rect key="frame" x="34" y="253" width="345" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSB-gn-B0K">
                                 <rect key="frame" x="33" y="321" width="345" height="34"/>
@@ -360,19 +357,19 @@
                                 <rect key="frame" x="33" y="442" width="345" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="given-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqR-8k-ui1">
                                 <rect key="frame" x="32" y="510" width="345" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-En-Yyp">
                                 <rect key="frame" x="33" y="579" width="345" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="tel"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5b-Kh-Lhq">
                                 <rect key="frame" x="34" y="709" width="343" height="35"/>
@@ -410,7 +407,7 @@
             <objects>
                 <tableViewController id="MJf-y3-Zru" customClass="DreamTableViewController" customModule="DreamJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KCQ-D3-6Xh">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -474,7 +471,7 @@
             <objects>
                 <viewController id="Uen-tH-Szt" customClass="AddJournalEntryViewController" customModule="DreamJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bT1-BL-92N">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-7F-gtC">
@@ -606,14 +603,12 @@
             </objects>
             <point key="canvasLocation" x="1931.1627906976744" y="126.82403433476395"/>
         </scene>
-
         <!--Profile View Controller-->
         <scene sceneID="z5G-M6-IP5">
             <objects>
                 <viewController id="6rJ-5k-uo3" customClass="ProfileViewController" customModule="DreamJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jvw-rW-g96">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dream_Journal_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="SwA-rS-nyi">
@@ -641,7 +636,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bD-RT-wP6">
                                 <rect key="frame" x="84" y="247" width="262" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -670,7 +664,6 @@
         <scene sceneID="EsR-ex-ShL">
             <objects>
                 <viewController id="ViN-wx-ip1" customClass="DashboardViewController" customModule="DreamJournal" customModuleProvider="target" sceneMemberID="viewController">
-
                     <view key="view" contentMode="scaleToFill" id="3XY-oJ-cEx">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -684,17 +677,6 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" text="Search your Dream" translatesAutoresizingMaskIntoConstraints="NO" id="WCz-HS-W1M">
-                                <rect key="frame" x="55" y="131" width="272" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="ViN-wx-ip1" id="VSx-xE-kkd"/>
-                                </connections>
-                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktZ-G9-8yP">
                                 <rect key="frame" x="33" y="206" width="260" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -765,6 +747,17 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Ujj-XX-7kz"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="YFr-sa-6Lt"/>
                             </scrollView>
+                            <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" text="Search your Dream" translatesAutoresizingMaskIntoConstraints="NO" id="WCz-HS-W1M">
+                                <rect key="frame" x="33" y="131" width="272" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ViN-wx-ip1" id="VSx-xE-kkd"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i9T-4X-gTz"/>
                         <color key="backgroundColor" red="0.96841150519999997" green="0.95648497964969093" blue="0.80080381431064662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -799,8 +792,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rhH-xI-vgv"/>
-
+        <segue reference="XTi-S6-9zD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Dream_Journal_Icon" width="291" height="233"/>
@@ -811,7 +803,6 @@
         <image name="menu_icon_12" width="48" height="48"/>
         <image name="settings_icon" width="48" height="48"/>
         <image name="user_icon" width="48" height="48"/>
-
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
