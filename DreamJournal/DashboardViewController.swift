@@ -29,22 +29,6 @@ class DashboardViewController : UIViewController{
         performSegue(withIdentifier: "AddEditDream", sender: user)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToListView" {
-            if let listVC = segue.destination as? DreamTableViewController ,let user = sender as? UserTable {
-                    listVC.user = user
-                }
-            }
-        else if segue.identifier == "ToProfile"{
-            if let profileVC = segue.destination as? ProfileViewController , let user = sender as? UserTable {
-                profileVC.user = user
-            }
-        }
-        else if segue.identifier == "AddEditDream"{
-            if let addEditVC = segue.destination as? AddJournalEntryViewController, let user = sender  as? UserTable {
-                addEditVC.user = user
-            }
-        }
-        }
-    }
+    
+}
 

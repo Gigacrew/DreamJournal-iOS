@@ -34,82 +34,82 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    func saveUserDataToJSON() {
-        
-           let userData: [String: String] = [
-            "email": emailTextField.text ?? "",
-            "username": usernameTextfield.text ?? "",
-            "password": passwordTextField.text ?? "",
-            "firstName": firstNameTextField.text ?? "",
-            "lastName": lastNameTextField.text ?? "",
-            "phoneNumber": phoneNumberTextField.text ?? ""
-        ]
-           
-           if let fileURL = Bundle.main.url(forResource: "users", withExtension: "json") {
-               do {
-                   // Read the existing JSON data from the file
-                   let jsonData = try Data(contentsOf: fileURL)
-                   
-                   // Deserialize the JSON data into an array of dictionaries
-                   var jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [[String: String]] ?? []
-                   
-                   jsonArray.append(userData)
-                   
-                   let updatedJsonData = try JSONSerialization.data(withJSONObject: jsonArray, options: .prettyPrinted)
-                   
-                   try updatedJsonData.write(to: fileURL)
-                   
-                   print("User data saved to 'users.json' successfully.")
-               } catch {
-                   print("Error writing to 'users.json': \(error)")
-               }
-           } else {
-               print("Failed to get URL for 'users.json' in the main bundle.")
-           }
-       }
-    func getUserIDInfo(){
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-
-        let context = appDelegate.persistentContainer.viewContext
-        
-        let fetchRequest: NSFetchRequest<UserTable> = UserTable.fetchRequest()
-        do {
-            let users = try context.fetch(fetchRequest)
-            print("Users count: ",users.count)
-            userCount = users.count
-        }
-        catch {
-            print("Failed to fetch Users: \(error)")
-        }
-    }
-    
-    func saveUserDataToCoreData() {
-           guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-               return
-           }
-            getUserIDInfo()
-
-           let context = appDelegate.persistentContainer.viewContext
-           let newUser = UserTable(context: context)
-           newUser.email = emailTextField.text
-           newUser.username = usernameTextfield.text
-           newUser.password = passwordTextField.text
-           newUser.firstName = firstNameTextField.text
-           newUser.lastName = lastNameTextField.text
-           newUser.phoneNumber = phoneNumberTextField.text
-        
-           newUser.user_id = Int16(userCount + 1)
-
-           do {
-               try context.save()
-               print("User data saved to Core Data successfully.")
-           } catch {
-               print("Failed to save user data to Core Data: \(error)")
-           }
-       }
+//    
+//    func saveUserDataToJSON() {
+//        
+//           let userData: [String: String] = [
+//            "email": emailTextField.text ?? "",
+//            "username": usernameTextfield.text ?? "",
+//            "password": passwordTextField.text ?? "",
+//            "firstName": firstNameTextField.text ?? "",
+//            "lastName": lastNameTextField.text ?? "",
+//            "phoneNumber": phoneNumberTextField.text ?? ""
+//        ]
+//           
+//           if let fileURL = Bundle.main.url(forResource: "users", withExtension: "json") {
+//               do {
+//                   // Read the existing JSON data from the file
+//                   let jsonData = try Data(contentsOf: fileURL)
+//                   
+//                   // Deserialize the JSON data into an array of dictionaries
+//                   var jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [[String: String]] ?? []
+//                   
+//                   jsonArray.append(userData)
+//                   
+//                   let updatedJsonData = try JSONSerialization.data(withJSONObject: jsonArray, options: .prettyPrinted)
+//                   
+//                   try updatedJsonData.write(to: fileURL)
+//                   
+//                   print("User data saved to 'users.json' successfully.")
+//               } catch {
+//                   print("Error writing to 'users.json': \(error)")
+//               }
+//           } else {
+//               print("Failed to get URL for 'users.json' in the main bundle.")
+//           }
+//       }
+//    func getUserIDInfo(){
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//
+//        let context = appDelegate.persistentContainer.viewContext
+//        
+//        let fetchRequest: NSFetchRequest<UserTable> = UserTable.fetchRequest()
+//        do {
+//            let users = try context.fetch(fetchRequest)
+//            print("Users count: ",users.count)
+//            userCount = users.count
+//        }
+//        catch {
+//            print("Failed to fetch Users: \(error)")
+//        }
+//    }
+//    
+//    func saveUserDataToCoreData() {
+//           guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//               return
+//           }
+//            getUserIDInfo()
+//
+//           let context = appDelegate.persistentContainer.viewContext
+//           let newUser = UserTable(context: context)
+//           newUser.email = emailTextField.text
+//           newUser.username = usernameTextfield.text
+//           newUser.password = passwordTextField.text
+//           newUser.firstName = firstNameTextField.text
+//           newUser.lastName = lastNameTextField.text
+//           newUser.phoneNumber = phoneNumberTextField.text
+//        
+//           newUser.user_id = Int16(userCount + 1)
+//
+//           do {
+//               try context.save()
+//               print("User data saved to Core Data successfully.")
+//           } catch {
+//               print("Failed to save user data to Core Data: \(error)")
+//           }
+//       }
 
     @IBAction func CreateUser(_ sender: Any) {
         guard let username = usernameTextfield.text,
@@ -129,6 +129,7 @@ class SignUpViewController: UIViewController {
                         print("Registration failed: \(error.localizedDescription)")
                         return
                     }
+            print("Inside Create User")
 
                     // Store the username and email mapping in Firestore
                     let db = Firestore.firestore()

@@ -1,43 +1,47 @@
 import UIKit
-
 import FirebaseFirestore
+import FirebaseAuth
 import FirebaseFirestoreSwift
 
-class DreamTableViewController: UITableViewController
-{
-    var dreamList:[DreamEntryTable]=[]
-    var user:UserTable?
+class DreamTableViewController: UITableViewController {
+    var dreamList: [Dream] = []  // Updated to use Dream instead of DreamEntryTable
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchDreamsFromFirestore()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchDreamsFromFirestore()
     }
+    
     func fetchDreamsFromFirestore() {
+        guard let userId = Auth.auth().currentUser?.uid else {
+                print("No user is currently logged in.")
+                return
+            }
+
         let db = Firestore.firestore()
-        db.collection("dreams").getDocuments { (snapshot, error) in
+        db.collection("dreams")
+          .whereField("userId", isEqualTo: userId)  // Assuming the userId field is correct
+          .getDocuments { (snapshot, error) in
             if let error = error {
                 print("Error fetching documents: \(error)")
                 return
             }
             
-            var fetchedDreams: [DreamEntryTable] = []
+            var fetchedDreams: [Dream] = []  // Use Dream here
             
             for document in snapshot!.documents {
-                let documentID = document.documentID
-                var dreamData = document.data()
-                
-                // Process data as needed from the document snapshot
-                // For instance, if your DreamEntryTable has properties like "title" and "description":
-                let title = dreamData["title"] as? String ?? ""
-                let description = dreamData["description"] as? String ?? ""
-                var dream : DreamEntryTable?
-                // Create a DreamEntryTable instance using the extracted data
-                if let dream = dream {
-                    dream.title = title
-                    dream.dream_description = description
+                do {
+                    var dream = try document.data(as: Dream.self)// Use Codable to decode
+                    dream.dreamId = document.documentID
+                    fetchedDreams.append(dream)
+                } catch {
+                    print("Error decoding dream: \(error)")
                 }
-                fetchedDreams.append(dream!)
             }
             
             DispatchQueue.main.async {
@@ -46,7 +50,6 @@ class DreamTableViewController: UITableViewController
             }
         }
     }
-    
 
     // MARK: - Table view data source
 
@@ -58,18 +61,25 @@ class DreamTableViewController: UITableViewController
         return dreamList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DreamEntry", for: indexPath) as! DreamTableViewCell
         let dream = dreamList[indexPath.row]
         
-        cell.titleLabel?.text = dream.title?.capitalized
-        cell.descriptionLabel?.text? = dream.dream_description!.capitalized
-        cell.dateLabel?.text = dream.date
+        // Ensure that the properties match the Dream struct
+        cell.titleLabel?.text = dream.title.capitalized
+        cell.descriptionLabel?.text = dream.dreamDescription.capitalized
+        
+        // Format the date to display it in the cell
+        if let date = dream.date {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            cell.dateLabel?.text = formatter.string(from: date)
+        } else {
+            cell.dateLabel?.text = "Date not available"
+        }
 
         return cell
     }
-    
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
@@ -91,11 +101,9 @@ class DreamTableViewController: UITableViewController
                    // Editing existing movie
                    let dream = dreamList[indexPath.row]
                    addEditVC.dream = dream
-                    addEditVC.user = user
                 } else {
                     // Adding new movie
                     addEditVC.dream = nil
-                    addEditVC.user = user
                 }
             }
         }

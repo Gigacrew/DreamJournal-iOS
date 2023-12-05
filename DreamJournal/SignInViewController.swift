@@ -66,55 +66,44 @@ class SignInViewController: UIViewController {
   
     
     @IBAction func LoginBtnPressed(_ sender: Any) {
-        guard let username = usernameTextField.text, let password = passwordTextField.text else { print("Please enter both username and password."); return}
-            
-            // Retrieve the email associated with the username
-            let db = Firestore.firestore()
-            let docRef = db.collection("usernames")
-            .document(username)
-            docRef.getDocument {
-                document,
-                error in
-                if let document = document,
-                   document.exists,
-                   let data = document.data(),
-                   let email = data["email"] as? String {
-                    // Authenticate with Firebase using the retrieved email
-                    Auth.auth().signIn(
-                        withEmail: email,
-                        password: password
-                    ) {
-                        authResult,
-                        error in
+        guard let username = usernameTextField.text, let password = passwordTextField.text, !username.isEmpty, !password.isEmpty else {
+            print("Please enter both username and password.")
+            return
+        }
+        
+        let db = Firestore.firestore()
+        db.collection("users")
+          .whereField("username", isEqualTo: username)
+          .getDocuments { (snapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                self.displayErrorMessage(message: "Error fetching user details")
+            } else if let snapshot = snapshot, snapshot.documents.count > 0 {
+                // Assuming username is unique and fetches the first document
+                if let document = snapshot.documents.first,
+                   let email = document.data()["email"] as? String {
+                    
+                    Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
                         if let error = error {
-                            print(
-                                "Login failed: \(error.localizedDescription)"
-                            )
-                            self.displayErrorMessage(
-                                message: "Authentication Failed"
-                            )
-                            return
-                        }
-                        
-                        print(
-                            "User logged in successfully."
-                        )
-                        DispatchQueue.main.async {
-                            self.performSegue(
-                                withIdentifier: "ToDashboard",
-                                sender: nil
-                            )
+                            print("Login failed: \(error.localizedDescription)")
+                            self.displayErrorMessage(message: "Authentication Failed")
+                        } else {
+                            print("User logged in successfully.")
+                            DispatchQueue.main.async {
+                                self.performSegue(withIdentifier: "ToDashboard", sender: nil)
+                            }
                         }
                     }
                 } else {
-                    print(
-                        "Username not found."
-                    )
-                    
+                    print("Email not found for the given username.")
+                    self.displayErrorMessage(message: "Invalid Username")
                 }
+            } else {
+                print("Username does not exist.")
+                self.displayErrorMessage(message: "Invalid Username")
             }
-            
         }
+    }
     
     func displayErrorMessage(message: String)
         {
@@ -129,27 +118,6 @@ class SignInViewController: UIViewController {
             }
         }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToProfile" {
-            // Pass the user object to the ProfileViewController
-            if let profileVC = segue.destination as? ProfileViewController,
-               let user = sender as? UserTable {
-                // Set the user information properties in ProfileViewController
-                profileVC.user = user
-            }
-
-            
-            if segue.identifier == "ToDashboard" {
-                if let navigationController = segue.destination as? UINavigationController,
-                   let dashboardVC = navigationController.topViewController as? DashboardViewController {
-                    if let user = sender as? UserTable {
-                        dashboardVC.user = user
-                    }
-
-                }
-            }
-        }
-    }
     
     @IBAction func forgotPassBtn(_ sender: Any) {
         let refreshAlert = UIAlertController(title: "Sign out?", message: "You can always access your content by signing back in ", preferredStyle: UIAlertController.Style.alert)
@@ -163,7 +131,6 @@ class SignInViewController: UIViewController {
         }))
         present(refreshAlert, animated: true, completion: nil)
     }
-    
     
     
     
