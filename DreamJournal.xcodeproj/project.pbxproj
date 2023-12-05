@@ -23,9 +23,9 @@
 		DA0125652B12E55D001B0753 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA0125642B12E55D001B0753 /* FirebaseAuth */; };
 		DA0125672B12E55D001B0753 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DA0125662B12E55D001B0753 /* FirebaseFirestore */; };
 		DA0125692B12E55D001B0753 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA0125682B12E55D001B0753 /* FirebaseFirestoreSwift */; };
-		DA0ABBEA2B1EA311008F5E56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0ABBE92B1EA311008F5E56 /* GoogleService-Info.plist */; };
 		DA0ABBEF2B1EB97C008F5E56 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0ABBEE2B1EB97C008F5E56 /* Dream.swift */; };
 		DA0ABBF12B1ECFC3008F5E56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0ABBF02B1ECFC3008F5E56 /* User.swift */; };
+		DA0ABBF52B1FD272008F5E56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA0ABBF42B1FD272008F5E56 /* GoogleService-Info.plist */; };
 		DA232C342A54A15E009167D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA232C332A54A15E009167D2 /* .gitignore */; };
 		DA25A2C32A3652C6006883D6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25A2C22A3652C6006883D6 /* SignUpViewController.swift */; };
 		DA25A2C72A36967F006883D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25A2C62A36967F006883D6 /* ProfileViewController.swift */; };
@@ -33,6 +33,18 @@
 		DA3101312A7BDE3600A0CEE4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3101302A7BDE3600A0CEE4 /* DashboardViewController.swift */; };
 		DA7840A02A5792550091AF96 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78409E2A5792550091AF96 /* users.json */; };
 		DA7840A12A5792550091AF96 /* dreams.json in Resources */ = {isa = PBXBuildFile; fileRef = DA78409F2A5792550091AF96 /* dreams.json */; };
+		DAC37A8D2B1FE8C100C898B6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE936C42B1FD8A900C311F2 /* WidgetKit.framework */; };
+		DAC37A8E2B1FE8C100C898B6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE936C62B1FD8A900C311F2 /* SwiftUI.framework */; };
+		DAC37A912B1FE8C100C898B6 /* DreamJournal_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A902B1FE8C100C898B6 /* DreamJournal_WidgetBundle.swift */; };
+		DAC37A932B1FE8C100C898B6 /* DreamJournal_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A922B1FE8C100C898B6 /* DreamJournal_Widget.swift */; };
+		DAC37A952B1FE8C300C898B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC37A942B1FE8C300C898B6 /* Assets.xcassets */; };
+		DAC37A992B1FE8C300C898B6 /* DreamJournal_WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DAC37A8C2B1FE8C100C898B6 /* DreamJournal_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAC37A9E2B1FEA2F00C898B6 /* DreamJournal_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A9D2B1FEA2E00C898B6 /* DreamJournal_Widget.intentdefinition */; };
+		DAC37AA02B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A9F2B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift */; };
+		DAC37AA12B1FEAAA00C898B6 /* DreamJournal_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A9F2B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift */; };
+		DAC37AA22B1FEAAA00C898B6 /* DreamJournal_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC37A9D2B1FEA2E00C898B6 /* DreamJournal_Widget.intentdefinition */; };
+		DAC37AA42B1FEAB400C898B6 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37AA32B1FEAB400C898B6 /* WidgetData.swift */; };
+		DAC37AA52B1FEAB400C898B6 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC37AA32B1FEAB400C898B6 /* WidgetData.swift */; };
 		DAD5D16B2A64B8FC0014EBBB /* DreamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5D16A2A64B8FC0014EBBB /* DreamTableViewController.swift */; };
 		DAD5D16D2A64B9080014EBBB /* DreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5D16C2A64B9080014EBBB /* DreamTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +64,28 @@
 			remoteGlobalIDString = 6124E6182A343E4D00715FA9;
 			remoteInfo = DreamJournal;
 		};
+		DAC37A972B1FE8C300C898B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6124E6112A343E4D00715FA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC37A8B2B1FE8C100C898B6;
+			remoteInfo = DreamJournal_WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAE936D62B1FD8AB00C311F2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAC37A992B1FE8C300C898B6 /* DreamJournal_WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AB08F582A7B1F7900699692 /* AppUserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDataModel.swift; sourceTree = "<group>"; };
@@ -72,9 +105,9 @@
 		6124E6422A343E5100715FA9 /* DreamJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61C46DE22A351B6D00821D0B /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		61C46DE32A351B6D00821D0B /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
-		DA0ABBE92B1EA311008F5E56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../untitled folder/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA0ABBEE2B1EB97C008F5E56 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 		DA0ABBF02B1ECFC3008F5E56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA0ABBF42B1FD272008F5E56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../untitled folder/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA232C332A54A15E009167D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA25A2C22A3652C6006883D6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DA25A2C62A36967F006883D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +115,18 @@
 		DA3101302A7BDE3600A0CEE4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DA78409E2A5792550091AF96 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		DA78409F2A5792550091AF96 /* dreams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dreams.json; sourceTree = "<group>"; };
+		DAC37A8C2B1FE8C100C898B6 /* DreamJournal_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DreamJournal_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC37A902B1FE8C100C898B6 /* DreamJournal_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamJournal_WidgetBundle.swift; sourceTree = "<group>"; };
+		DAC37A922B1FE8C100C898B6 /* DreamJournal_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamJournal_Widget.swift; sourceTree = "<group>"; };
+		DAC37A942B1FE8C300C898B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC37A962B1FE8C300C898B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC37A9D2B1FEA2E00C898B6 /* DreamJournal_Widget.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; name = DreamJournal_Widget.intentdefinition; path = "../../../../../../untitled folder/DreamJournal-iOS/DreamJournal_Widget/DreamJournal_Widget.intentdefinition"; sourceTree = "<group>"; };
+		DAC37A9F2B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DreamJournal_WidgetLiveActivity.swift; path = "../../../../../../untitled folder/DreamJournal-iOS/DreamJournal_Widget/DreamJournal_WidgetLiveActivity.swift"; sourceTree = "<group>"; };
+		DAC37AA32B1FEAB400C898B6 /* WidgetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
 		DAD5D16A2A64B8FC0014EBBB /* DreamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DreamTableViewController.swift; path = DreamJournal/DreamTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAD5D16C2A64B9080014EBBB /* DreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamTableViewCell.swift; sourceTree = "<group>"; };
+		DAE936C42B1FD8A900C311F2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DAE936C62B1FD8A900C311F2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +154,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC37A892B1FE8C100C898B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC37A8E2B1FE8C100C898B6 /* SwiftUI.framework in Frameworks */,
+				DAC37A8D2B1FE8C100C898B6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +173,8 @@
 				6124E61B2A343E4D00715FA9 /* DreamJournal */,
 				6124E6352A343E5000715FA9 /* DreamJournalTests */,
 				6124E63F2A343E5100715FA9 /* DreamJournalUITests */,
+				DAC37A8F2B1FE8C100C898B6 /* DreamJournal_Widget */,
+				DAE936C32B1FD8A900C311F2 /* Frameworks */,
 				6124E61A2A343E4D00715FA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +185,7 @@
 				6124E6192A343E4D00715FA9 /* DreamJournal.app */,
 				6124E6322A343E5000715FA9 /* DreamJournalTests.xctest */,
 				6124E63C2A343E5100715FA9 /* DreamJournalUITests.xctest */,
+				DAC37A8C2B1FE8C100C898B6 /* DreamJournal_WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,13 +207,14 @@
 				6124E6252A343E4E00715FA9 /* DreamJournal.xcdatamodeld */,
 				6124E6202A343E4D00715FA9 /* SignInViewController.swift */,
 				DA25A2C22A3652C6006883D6 /* SignUpViewController.swift */,
-				DA0ABBE92B1EA311008F5E56 /* GoogleService-Info.plist */,
 				DA25A2C62A36967F006883D6 /* ProfileViewController.swift */,
+				DA0ABBF42B1FD272008F5E56 /* GoogleService-Info.plist */,
 				DA25A2C82A37D46A006883D6 /* AddJournalEntryViewController.swift */,
 				DA78409F2A5792550091AF96 /* dreams.json */,
 				DA78409E2A5792550091AF96 /* users.json */,
 				DA3101302A7BDE3600A0CEE4 /* DashboardViewController.swift */,
 				DA0ABBF02B1ECFC3008F5E56 /* User.swift */,
+				DAC37AA32B1FEAB400C898B6 /* WidgetData.swift */,
 			);
 			path = DreamJournal;
 			sourceTree = "<group>";
@@ -189,6 +245,28 @@
 			path = Abel;
 			sourceTree = "<group>";
 		};
+		DAC37A8F2B1FE8C100C898B6 /* DreamJournal_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				DAC37A902B1FE8C100C898B6 /* DreamJournal_WidgetBundle.swift */,
+				DAC37A9F2B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift */,
+				DAC37A922B1FE8C100C898B6 /* DreamJournal_Widget.swift */,
+				DAC37A9D2B1FEA2E00C898B6 /* DreamJournal_Widget.intentdefinition */,
+				DAC37A942B1FE8C300C898B6 /* Assets.xcassets */,
+				DAC37A962B1FE8C300C898B6 /* Info.plist */,
+			);
+			path = DreamJournal_Widget;
+			sourceTree = "<group>";
+		};
+		DAE936C32B1FD8A900C311F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAE936C42B1FD8A900C311F2 /* WidgetKit.framework */,
+				DAE936C62B1FD8A900C311F2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,10 +277,12 @@
 				6124E6152A343E4D00715FA9 /* Sources */,
 				6124E6162A343E4D00715FA9 /* Frameworks */,
 				6124E6172A343E4D00715FA9 /* Resources */,
+				DAE936D62B1FD8AB00C311F2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAC37A982B1FE8C300C898B6 /* PBXTargetDependency */,
 			);
 			name = DreamJournal;
 			packageProductDependencies = (
@@ -254,6 +334,23 @@
 			productReference = 6124E63C2A343E5100715FA9 /* DreamJournalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DAC37A8B2B1FE8C100C898B6 /* DreamJournal_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC37A9C2B1FE8C300C898B6 /* Build configuration list for PBXNativeTarget "DreamJournal_WidgetExtension" */;
+			buildPhases = (
+				DAC37A882B1FE8C100C898B6 /* Sources */,
+				DAC37A892B1FE8C100C898B6 /* Frameworks */,
+				DAC37A8A2B1FE8C100C898B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamJournal_WidgetExtension;
+			productName = DreamJournal_WidgetExtension;
+			productReference = DAC37A8C2B1FE8C100C898B6 /* DreamJournal_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,8 +358,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					6124E6182A343E4D00715FA9 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -274,6 +371,9 @@
 					6124E63B2A343E5100715FA9 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 6124E6182A343E4D00715FA9;
+					};
+					DAC37A8B2B1FE8C100C898B6 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
@@ -296,6 +396,7 @@
 				6124E6182A343E4D00715FA9 /* DreamJournal */,
 				6124E6312A343E5000715FA9 /* DreamJournalTests */,
 				6124E63B2A343E5100715FA9 /* DreamJournalUITests */,
+				DAC37A8B2B1FE8C100C898B6 /* DreamJournal_WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -307,11 +408,11 @@
 			files = (
 				61C46DE52A351B6D00821D0B /* Abel-Regular.ttf in Resources */,
 				6124E62C2A343E5000715FA9 /* LaunchScreen.storyboard in Resources */,
-				DA0ABBEA2B1EA311008F5E56 /* GoogleService-Info.plist in Resources */,
 				6124E6292A343E5000715FA9 /* Assets.xcassets in Resources */,
 				61C46DE42A351B6D00821D0B /* OFL.txt in Resources */,
 				DA7840A02A5792550091AF96 /* users.json in Resources */,
 				DA232C342A54A15E009167D2 /* .gitignore in Resources */,
+				DA0ABBF52B1FD272008F5E56 /* GoogleService-Info.plist in Resources */,
 				6124E6242A343E4D00715FA9 /* Main.storyboard in Resources */,
 				DA7840A12A5792550091AF96 /* dreams.json in Resources */,
 			);
@@ -328,6 +429,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC37A8A2B1FE8C100C898B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC37A952B1FE8C300C898B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +532,12 @@
 				DA25A2C72A36967F006883D6 /* ProfileViewController.swift in Sources */,
 				DA25A2C32A3652C6006883D6 /* SignUpViewController.swift in Sources */,
 				1AB08F592A7B1F7900699692 /* AppUserDataModel.swift in Sources */,
+				DAC37A9E2B1FEA2F00C898B6 /* DreamJournal_Widget.intentdefinition in Sources */,
 				6124E6212A343E4D00715FA9 /* SignInViewController.swift in Sources */,
 				6124E6272A343E4E00715FA9 /* DreamJournal.xcdatamodeld in Sources */,
 				DA25A2C92A37D46A006883D6 /* AddJournalEntryViewController.swift in Sources */,
+				DAC37AA02B1FEA7900C898B6 /* DreamJournal_WidgetLiveActivity.swift in Sources */,
+				DAC37AA42B1FEAB400C898B6 /* WidgetData.swift in Sources */,
 				DAD5D16D2A64B9080014EBBB /* DreamTableViewCell.swift in Sources */,
 				DA3101312A7BDE3600A0CEE4 /* DashboardViewController.swift in Sources */,
 				DAD5D16B2A64B8FC0014EBBB /* DreamTableViewController.swift in Sources */,
@@ -452,6 +564,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC37A882B1FE8C100C898B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC37AA12B1FEAAA00C898B6 /* DreamJournal_WidgetLiveActivity.swift in Sources */,
+				DAC37AA22B1FEAAA00C898B6 /* DreamJournal_Widget.intentdefinition in Sources */,
+				DAC37A912B1FE8C100C898B6 /* DreamJournal_WidgetBundle.swift in Sources */,
+				DAC37AA52B1FEAB400C898B6 /* WidgetData.swift in Sources */,
+				DAC37A932B1FE8C100C898B6 /* DreamJournal_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -464,6 +588,11 @@
 			isa = PBXTargetDependency;
 			target = 6124E6182A343E4D00715FA9 /* DreamJournal */;
 			targetProxy = 6124E63D2A343E5100715FA9 /* PBXContainerItemProxy */;
+		};
+		DAC37A982B1FE8C300C898B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC37A8B2B1FE8C100C898B6 /* DreamJournal_WidgetExtension */;
+			targetProxy = DAC37A972B1FE8C300C898B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -551,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -604,6 +735,7 @@
 		6124E6472A343E5100715FA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,6 +765,7 @@
 		6124E6482A343E5100715FA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -735,6 +868,69 @@
 			};
 			name = Release;
 		};
+		DAC37A9A2B1FE8C300C898B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DreamJournal_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DreamJournal_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.georgiancollege.DreamJournal.DreamJournal-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC37A9B2B1FE8C300C898B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DreamJournal_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DreamJournal_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.georgiancollege.DreamJournal.DreamJournal-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -770,6 +966,15 @@
 			buildConfigurations = (
 				6124E64D2A343E5100715FA9 /* Debug */,
 				6124E64E2A343E5100715FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC37A9C2B1FE8C300C898B6 /* Build configuration list for PBXNativeTarget "DreamJournal_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC37A9A2B1FE8C300C898B6 /* Debug */,
+				DAC37A9B2B1FE8C300C898B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
