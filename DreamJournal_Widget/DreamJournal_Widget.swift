@@ -50,9 +50,9 @@ struct DreamJournal_WidgetEntryView : View {
         VStack {
             Text(entry.str)
                 .font(.system(size: 15))
-                .padding(.bottom, 4) // Add bottom padding for separation
+                .padding(.bottom, 2) // Add bottom padding for separation
                 .multilineTextAlignment(.center) // Set multiline text alignment
-                .lineLimit(nil) // Allow unlimited lines for the text
+                .lineLimit(2) // Allow unlimited lines for the text
 
             Image("Dream_journal_logo")
                 .resizable()
