@@ -29,6 +29,7 @@ class SignInViewController: UIViewController {
     
     var receivedUsername: String?
     var receivedPassword: String?
+    var checkLogin: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +92,7 @@ class SignInViewController: UIViewController {
                             self.displayErrorMessage(message: "Authentication Failed: \(error.localizedDescription)") // Inform user of failed authentication
                         } else {
                             print("User logged in successfully.")
+                            self.checkLogin = "true"
                             DispatchQueue.main.async {
                                 self.performSegue(withIdentifier: "ToDashboard", sender: nil) // Segue to dashboard only on successful login
                             }
@@ -106,6 +108,19 @@ class SignInViewController: UIViewController {
             }
         }
     }
+     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+            if identifier == "ToDashboard" {
+                // Check your login condition here,If the login fails, prevent the segue
+                if self.checkLogin == "true"
+                {
+                    return true
+                }else{
+                    return false
+                }
+            }
+            // Allow other segues to proceed
+            return true
+        }
     
     func displayErrorMessage(message: String)
         {
