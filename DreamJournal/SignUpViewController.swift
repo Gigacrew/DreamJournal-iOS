@@ -127,6 +127,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                     if let error = error {
                         print("Registration failed: \(error.localizedDescription)")
+                        self.displayErrorMessage(message: "\(error.localizedDescription)")
                         return
                     }
             print("Inside Create User")
@@ -142,6 +143,28 @@ class SignUpViewController: UIViewController {
                     }
 
                     print("User registered successfully.")
+                     // User registration success
+                    guard let user = authResult?.user else { return }
+                    
+                    // Save additional user information to Firestore
+                    let userId = user.uid
+                    let userMap: [String: Any] = [
+                        "username": username,
+                        "firstname": firstName,
+                        "lastname": lastName,
+                        "email": email,
+                        "phoneNumber": phoneNumber
+                    ]
+            // Store user information in Firestore
+                    db.collection("users").document(userId).setData(userMap) { error in
+                        if let error = error {
+                            print("Error adding user information to Firestore: \(error.localizedDescription)")
+                            // TODO: Handle registration failure
+                        } else {
+                            print("User information added to Firestore.")
+                            // TODO: Handle successful registration and navigation
+                        }
+                    }                                                  
                     DispatchQueue.main.async {
                         
                         self.dismiss(animated: true, completion: nil)
@@ -150,6 +173,17 @@ class SignUpViewController: UIViewController {
         
         
     }
+     func displayErrorMessage(message: String)
+        {
+            let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+            })
+            
+            DispatchQueue.main.async
+            {
+                self.present(alertController, animated: true)
+            }
+        }
     
     
     
