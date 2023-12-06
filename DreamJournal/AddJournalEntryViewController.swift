@@ -54,7 +54,11 @@ class AddJournalEntryViewController : UIViewController ,UIImagePickerControllerD
                     print("No user ID available")
                     return
                 }
-                
+                guard let tittle = titleTextField.text, let descprition = descriptionTextView.text, !tittle.isEmpty, !descprition.isEmpty else {
+                  print("Please enter field values.")
+                  self.displayErrorMessage(message: "Please enter field values.")
+                  return
+                }
                 let title = titleTextField.text ?? ""
                 let dreamDescription = descriptionTextView.text ?? ""
                 let category = categoriesTextField.text ?? ""
@@ -77,6 +81,17 @@ class AddJournalEntryViewController : UIViewController ,UIImagePickerControllerD
                 saveDream(dreamToUpdate)
                 navigationController?.popViewController(animated: true)
             }
+    func displayErrorMessage(message: String)
+                {
+                 let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                   alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                        })
+                                             
+                      DispatchQueue.main.async
+                       {
+                        self.present(alertController, animated: true)
+                        }
+                         }
             
     func saveDream(_ dream: Dream) {
         let db = Firestore.firestore()
